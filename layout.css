@@ -1,0 +1,158 @@
+body{
+    background-color: black;
+}
+
+/* @media screen and (max-width: 767px){
+    .container{
+        background-color:#d67575;
+    }
+} */
+
+.container-full{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    padding-bottom: 30px;
+    background-color:#E9E3E3;
+}
+
+.container .mini-Contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px 600px;
+    grid-gap: 60px;
+    padding: 60px 85px;
+}
+
+.container .mini-Contents .mini-Content{
+    --width-mini-content: 450px;
+    width: var(--width-mini-content);
+    background-color: white;
+    box-shadow: 5px 5px 7px #B6B2B2;
+}
+
+.container .mini-Contents .mini-Content img{
+    --padding-img: 7px;
+     height: 50%;
+    width: calc(var(--width-mini-content) - calc(var(--padding-img) * 4));
+    padding: calc(var(--padding-img) * 2);
+    object-fit: cover;
+}
+
+.container .mini-Contents  .info-Content {
+    color: #8D8585;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    position: relative;
+    margin: 90px 35px 20px 35px;
+}
+
+.container .mini-Contents  .info-Content .info-left .logo {
+    display: flex;
+}
+
+.container .mini-Contents  .info-Content .info-left .logo ion-icon {
+    font-size: 30px;
+    font-weight: 550;
+    margin-top: -2px;
+}
+
+.container .mini-Contents  .info-Content .info-left .logo div{
+    float: left;
+    width: 30px;
+    line-height: 0.8rem;
+    font-size: 16px;
+}
+
+.container .mini-Contents  .info-Content .info-left .info-contact{
+    font-size: 8px;
+    padding-top: 20px;
+}
+
+.container .mini-Contents  .info-Content .info-right{
+    position: absolute;
+    flex-grow: 1;
+    bottom: 0;
+    right: 0;
+}
+
+.container .mini-Contents  .info-Content .info-right p{
+    text-align: right;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+/* Nội dung lớn cần css */
+
+.container .big-Content{
+    height: 1150px;
+    margin: 20px 150px 30px 170px ;
+    --width-mini-content: 800px;
+    width: var(--width-mini-content);
+    background-color: white;
+    box-shadow: 10px 10px 15px #B6B2B2;
+}
+
+.container .big-Content img{
+    --padding-img: 12px;
+    height: 40%;
+    width: calc(var(--width-mini-content) - calc(var(--padding-img) * 4));
+    padding: calc(var(--padding-img) * 2);
+    object-fit: cover;
+}
+
+.container .big-Content  .info-Content {
+    color: #8D8585;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    position: relative;
+    margin: 110px 55px 20px 55px;
+}
+
+
+.container .big-Content .info-Content .info-left .logo {
+    display: flex;
+}
+
+.container .big-Content  .info-Content .info-left .logo ion-icon {
+    font-size: 50px;
+    font-weight: 850;
+    margin-top: -4px;
+}
+
+.container .big-Content  .info-Content .info-left .logo div{
+    float: left;
+    width: 30px;
+    line-height: 1.2rem;
+    font-size: 25px;
+}
+
+.container .big-Content  .info-Content .info-left .info-contact{
+    font-size: 12px;
+    padding-top: 25px;
+    
+}
+
+.container .big-Content  .info-Content .info-right{
+    position: absolute;
+    flex-grow: 1;
+    bottom: 0;
+    right: 0;
+}
+
+.container .big-Content  .info-Content .info-right p{
+    text-align: right;
+    line-height: 45px;
+    font-size: 33px;
+}
+
+.container .big-Content .top-bigContent{
+    margin-top: 80px;
+    padding-left: 55px;
+    font-size: 80px;
+    color: #573244;
+}
